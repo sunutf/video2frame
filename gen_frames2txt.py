@@ -30,7 +30,7 @@ if __name__ == "__main__":
             print(f"no frames in {video}")
             continue
 
-        summary = f"{video},{anno},{num_frames}"
+        summary = f"{video},{num_frames},{anno}"
         dsts.append(summary)
         
     with open(dst_txt, 'w') as f:
